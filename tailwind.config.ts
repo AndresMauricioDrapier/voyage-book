@@ -17,8 +17,23 @@ const config = {
         "2xl": "1400px",
       },
     },
+    
     extend: {
       colors: {
+        // GENERADO AUTOMATICAMENTE UICOLORS
+        'powder-blue': {
+          '50': '#ffffff',
+          '100': '#effafa',
+          '200': '#b0d9de',
+          '300': '#90c6d0',
+          '400': '#5a9fb5',
+          '500': '#41809b',
+          '600': '#376481',
+          '700': '#32516c',
+          '800': '#30435a',
+          '900': '#2d394e',
+          '950': '#192233',
+      },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
