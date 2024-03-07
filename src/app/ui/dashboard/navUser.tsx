@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 
   
-  export function NavUsuario() {
+const NavUser = () => {
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -25,17 +25,19 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuGroup, DropdownMenuItem,
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
             <DropdownMenuItem>
-              Perfil
+              Profile
             </DropdownMenuItem>
             <DropdownMenuItem>
-              Ajustes
+              Settings
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            Cerrar Sesión
+            Logout
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     )
   }
+
+export default NavUser;

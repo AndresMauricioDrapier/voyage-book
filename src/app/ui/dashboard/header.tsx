@@ -17,7 +17,7 @@ import {
 
 import components from "@/app/config/menu"
 import Image from "next/image"
-import { NavUsuario } from "./navUsuario"
+import NavUser from "./navUser"
 
 export default function Header() {
 return (
@@ -88,7 +88,7 @@ return (
     </NavigationMenu>
 
     <div className="mr-2 mt-2">
-       <NavUsuario />
+       <NavUser />
     </div>
   </nav>
    
