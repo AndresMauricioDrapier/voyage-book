@@ -17,7 +17,7 @@ import {
 
 import components from "@/app/config/menu"
 import Image from "next/image"
-import NavUser from "./navUser"
+import NavUser from "./nav-user"
 
 export default function Header() {
 return (
@@ -25,6 +25,7 @@ return (
     <div className="flex items-center ml-2 mt-2">
     <Image alt="hola" width={50} src={'/favicon.ico'} height={50}/>
     </div>
+    
     
     <NavigationMenu>
         <NavigationMenuList>
@@ -86,7 +87,6 @@ return (
             </NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
-
     <div className="mr-2 mt-2">
        <NavUser />
     </div>
