@@ -1,39 +1,67 @@
-const components: { title: string; href: string; description: string }[] = [
-    {
-      title: "Alert Dialog",
-      href: "/docs/primitives/alert-dialog",
-      description:
-        "A modal dialog that interrupts the user with important content and expects a response.",
-    },
-    {
-      title: "Hover Card",
-      href: "/docs/primitives/hover-card",
-      description:
-        "For sighted users to preview content available behind a link.",
-    },
-    {
-      title: "Progress",
-      href: "/docs/primitives/progress",
-      description:
-        "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-    },
-    {
-      title: "Scroll-area",
-      href: "/docs/primitives/scroll-area",
-      description: "Visually or semantically separates content.",
-    },
-    {
-      title: "Tabs",
-      href: "/docs/primitives/tabs",
-      description:
-        "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-    },
-    {
-      title: "Tooltip",
-      href: "/docs/primitives/tooltip",
-      description:
-        "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-    },
-  ]
+// components.ts
+import { ComponentTypeEnum } from "../enums/menuTypes";
+
+export interface ComponentMenu {
+  title: string;
+  href: string;
+  description: string;
+  type: ComponentTypeEnum;
+  elements?: ComponentMenu[];
+}
+
+const components: ComponentMenu[] = [
+  {
+    type: ComponentTypeEnum.MAIN,
+    title: "Editor",
+    href: "/dashboard/editor",
+    description: "Editor Link",
+    elements: [
+      {
+        type: ComponentTypeEnum.SUB,
+        title: "My Boards",
+        href: "/dashboard/editor/boards",
+        description: "Main Boards of users",
+      },
+      {
+        type: ComponentTypeEnum.SUB,
+        title: "HIstory",
+        href: "/dashboard/editor/history",
+        description: "Historial of last dashboards used and shared.",
+      },
+    ],
+  },
+  {
+    type: ComponentTypeEnum.MAIN,
+    title: "Share",
+    href: "/dashboard/editor",
+    description: "Editor Link",
+    elements: [
+      {
+        type: ComponentTypeEnum.SUB,
+        title: "Rapid Links",
+        href: "/dashboard/share/my-links",
+        description: "Your personal Fave links",
+      },
+      {
+        type: ComponentTypeEnum.SUB,
+        title: "Genarate new links",
+        href: "/dashboard/editor/history",
+        description: "Historial of last dashboards used and shared.",
+      },
+    ],
+  },
+  {
+    type: ComponentTypeEnum.MAIN,
+    title: "Help",
+    href: "/help",
+    description: "Help message",
+  },
+  {
+    type: ComponentTypeEnum.MAIN,
+    title: "Documentation",
+    href: "/doss",
+    description: "docs message",
+  },
+];
 
 export default components;
