@@ -87,6 +87,10 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontSize: {
+        'xxs': '0.5rem', // 8px
+        'xxxs': '0.375rem', // 6px
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
