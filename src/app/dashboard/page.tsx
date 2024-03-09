@@ -14,7 +14,9 @@ export default function Home() {
         className="h-full w-full rounded-lg" 
         contents={[
           {
-            content: <SliderBoards />,
+            content: <>
+            <SliderBoards />
+            </>,
             defaultSize: 25,
           },
           {

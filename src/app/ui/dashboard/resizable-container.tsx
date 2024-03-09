@@ -32,9 +32,7 @@ export function ResizableContainer({ contents, className, direction = 'horizonta
                 {contents.map((content: ResizableContent, index: any) => (
                     <React.Fragment key={index}>
                         <ResizablePanel defaultSize={content.defaultSize}>
-                            <div className={`flex h-full items-center justify-center`}>
                                 {content.content}
-                            </div>
                         </ResizablePanel>
                         {index < contents.length - 1 && <ResizableHandle withHandle />}
                     </React.Fragment>
