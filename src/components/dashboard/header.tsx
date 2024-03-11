@@ -2,8 +2,8 @@
  
 import * as React from "react"
 import Image from "next/image"
-import NavUser from "./nav-user"
-import NavLinks from "./nav-links"
+import NavUser from "../common/nav-user"
+import NavLinks from "../common/nav-links"
 
 export default function Header() {
 return (

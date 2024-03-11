@@ -1,5 +1,5 @@
 // components.ts
-import { ComponentTypeEnum } from "../enums/menuTypes";
+import { ComponentTypeEnum } from "@/enums/menuTypes";
 
 export interface ComponentMenu {
   title: string;

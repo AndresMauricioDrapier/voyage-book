@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/navigation-menu"
 
 // Config for Menu Items
-import components from "../config/menu"
+import components from "@/config/menu"
 
 interface Component {
   title: string;

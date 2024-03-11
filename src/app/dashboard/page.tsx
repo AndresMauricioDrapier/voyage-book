@@ -1,8 +1,8 @@
 'use client';
 import React, { useState } from "react"
-import BoardCard from "../ui/editor/board-card";
-import ResizableContainer from "../ui/dashboard/resizable-container";
-import SliderBoards from "../ui/dashboard/slider-boards";
+import BoardCard from "../../components/dashboard/board-card";
+import ResizableContainer from "../../components/dashboard/resizable-container";
+import SliderBoards from "../../components/dashboard/slider-boards";
 
 export default function Home() {
 
