@@ -23,7 +23,6 @@ type ResizableContainerProps = ResizableContainerConfig;
 
 export function ResizableContainer({ contents, className, direction = 'horizontal', ...props }: ResizableContainerProps) {
     return (
-        <Card className="h-full">
             <ResizablePanelGroup
                 direction={direction}
                 className={`${className}`}
@@ -38,7 +37,6 @@ export function ResizableContainer({ contents, className, direction = 'horizonta
                     </React.Fragment>
                 ))}
             </ResizablePanelGroup>
-        </Card>
     )
 }
 
