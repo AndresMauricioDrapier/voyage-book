@@ -1,15 +1,15 @@
 'use client';
-import React, { useState } from "react"
-import BoardCard from "../../components/dashboard/board-card";
-import ResizableContainer from "../../components/dashboard/resizable-container";
-import SliderBoards from "../../components/dashboard/slider-boards";
+import React from "react"
 
-export default function Home() {
+import ResizableContainer from '@/components/dashboard/resizable-container';
+import SliderBoards from '@/components/dashboard//slider-boards';
+
+export default function Dashboard() {
 
   
     return (
     <>
-      <ResizableContainer 
+     <ResizableContainer 
         direction="horizontal" 
         className="h-full w-full rounded-lg" 
         contents={[
@@ -26,6 +26,7 @@ export default function Home() {
         ]} 
       />
     </>
+     
     )
   }
   
