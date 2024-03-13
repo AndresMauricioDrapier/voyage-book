@@ -19,13 +19,13 @@ const components: ComponentMenu[] = [
       {
         type: ComponentTypeEnum.SUB,
         title: "My Boards",
-        href: "/dashboard/editor/boards",
+        href: "/dashboard/boards",
         description: "Main Boards of users",
       },
       {
         type: ComponentTypeEnum.SUB,
-        title: "HIstory",
-        href: "/dashboard/editor/history",
+        title: "History",
+        href: "/dashboard/history",
         description: "Historial of last dashboards used and shared.",
       },
     ],
@@ -59,8 +59,14 @@ const components: ComponentMenu[] = [
   {
     type: ComponentTypeEnum.MAIN,
     title: "Documentation",
-    href: "/doss",
+    href: "/docs",
     description: "docs message",
+  },
+  {
+    type: ComponentTypeEnum.MAIN,
+    title: "Profile",
+    href: "/profile",
+    description: "Your profile",
   },
 ];
 

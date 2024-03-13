@@ -1,0 +1,9 @@
+{
+  "Layout": {
+    "prefix": "Layout",
+    "body": [
+      "export default function Layout({ children }: { children: React.ReactNode }) {\r\n    return (\r\n      <>\r\n      <h1>Provisional</h1>\r\n      {children}\r\n      </>\r\n    );\r\n  }"
+    ],
+    "description": "create layaut"
+  }
+}
