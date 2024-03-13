@@ -4,9 +4,6 @@ import {
     ResizablePanel,
     ResizablePanelGroup,
 } from "@/components/ui/resizable"
-import {
-    Card,
-  } from "@/components/ui/card"
 
 type ResizableContent = {
     content: React.ReactNode,
