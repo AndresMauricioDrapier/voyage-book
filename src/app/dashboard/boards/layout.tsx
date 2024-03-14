@@ -1,7 +1,8 @@
-export default function Layout({ children }: { children: React.ReactNode }) {
-    return (
+export default function Layout({ children, params }: { children: React.ReactNode, params: { boardId: string }}) {
+  const { boardId } = params;
+  return (
       <>
-      <h1>Provisional</h1>
+      <h1>Provisional {boardId}</h1>
       {children}
       </>
     );
