@@ -13,19 +13,19 @@ const components: ComponentMenu[] = [
   {
     type: ComponentTypeEnum.MAIN,
     title: "Editor",
-    href: "/dashboard/editor",
+    href: "/editor",
     description: "Editor Link",
     elements: [
       {
         type: ComponentTypeEnum.SUB,
         title: "My Boards",
-        href: "/dashboard/boards",
+        href: "/boards",
         description: "Main Boards of users",
       },
       {
         type: ComponentTypeEnum.SUB,
         title: "History",
-        href: "/dashboard/history",
+        href: "/history",
         description: "Historial of last dashboards used and shared.",
       },
     ],
@@ -33,19 +33,19 @@ const components: ComponentMenu[] = [
   {
     type: ComponentTypeEnum.MAIN,
     title: "Share",
-    href: "/dashboard/editor",
+    href: "/editor",
     description: "Editor Link",
     elements: [
       {
         type: ComponentTypeEnum.SUB,
         title: "Rapid Links",
-        href: "/dashboard/share/my-links",
+        href: "/share/my-links",
         description: "Your personal Fave links",
       },
       {
         type: ComponentTypeEnum.SUB,
         title: "Genarate new links",
-        href: "/dashboard/editor/history",
+        href: "/history",
         description: "Historial of last dashboards used and shared.",
       },
     ],

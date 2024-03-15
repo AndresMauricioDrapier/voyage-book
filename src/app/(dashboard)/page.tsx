@@ -9,7 +9,7 @@ export default function Dashboard() {
   
     return (
     <>
-     <ResizableContainer 
+     {/* <ResizableContainer 
         direction="horizontal" 
         className="h-full w-full rounded-lg" 
         contents={[
@@ -24,7 +24,7 @@ export default function Dashboard() {
             defaultSize: 90,
           },
         ]} 
-      />
+      /> */}
     </>
      
     )
